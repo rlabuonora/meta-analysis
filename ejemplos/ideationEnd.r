@@ -153,10 +153,10 @@ res_non_response_direct <- runMetaAnalysis(non_response_direct, es.measure = "RR
 # inspect outcomes of each subgroup(table per subgroup)
 country
 format
-therapytype
 targetgroup
 recruitmentsetting
 deliverysetting
-numberofsessions
 
+numberofsessions
+therapytype
 #End MA ideation list of contents#
