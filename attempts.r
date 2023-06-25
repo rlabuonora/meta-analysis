@@ -5,8 +5,8 @@ library(readxl)
 library(magrittr)
 
 #Reading dataset into workspace
-#data <- read_excel("non_response.xlsx")
-data <- read_excel("metapsydate_1.xlsx")
+#data <- read_excel("./data/non_response.xlsx")
+data <- read_excel("./data/metapsydate_1.xlsx")
 
 #for analysis of attempts#
 data %>% filter(attempters_arm1 >= 0) %>%

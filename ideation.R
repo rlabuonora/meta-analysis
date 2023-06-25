@@ -2,7 +2,7 @@ library(tidyverse)
 library(metapsyTools)
 
 library(readxl)
-data <- read_excel("metapsydate_2.xlsx") %>% 
+data <- read_excel("./data/metapsydate_2.xlsx") %>% 
   mutate(format=forcats::fct_recode(format,
                                     "Family"="fam",
                                     "Group"="grp",
@@ -72,12 +72,6 @@ ideation_cont %>% bind_rows(ideation_dich) -> ideation
 
 
 # for analysis of attempts
-data %>%
-  filter(event_arm1 >= 0) %>%
-  select(study, direct, condition_arm1, condition_arm2, multi_arm1, multi_arm2, instrument, time_weeks, event_arm1,
-         event_arm2, totaln_arm1, totaln_arm2) -> attempts
-attempts$outcome_type <- "RR"
-
 
 ideation$time <- "post"
 ideation$rating <- "NA"
