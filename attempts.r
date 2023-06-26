@@ -4,6 +4,8 @@ library(metapsyTools)
 library(readxl)
 library(meta)
 library(magrittr)
+library(dmetar)
+
 
 #Reading dataset into workspace
 #data <- read_excel("./data/non_response.xlsx")

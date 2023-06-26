@@ -1,6 +1,8 @@
 library(tidyverse)
 library(meta)
 library(metapsyTools)
+library(dmetar)
+
 
 library(readxl)
 data <- read_excel("./data/metapsydate_2.xlsx") %>% 

@@ -3,6 +3,7 @@ library(tidyverse)
 library(metapsyTools)
 library(readxl)
 library(meta)
+library(dmetar)
 library(magrittr)
 
 #Reading dataset into workspace
